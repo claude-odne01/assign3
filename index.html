@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Bootstrap Demo</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+              crossorigin="anonymous">
+
+       <style type="text/css">
+              .modal-backdrop1 {
+                     background-color: rgba(90, 238, 90, 0.1);
+              }
+
+              .modal-backdrop2 {
+                     background-color: rgba(0, 255, 255, 0.1);
+              }
+       </style>
+</head>
+
+<body>
+
+     <h1 class="fst-italic">Project 3 - Part 1</h1>
+     <br /><hr />
+     <div class="w-100 d-inline-flex justify-content-center">
+              <div class="border border-info  w-50 text-center mx-3">
+                     <h2 class="fst-italic">Oriole</h2>
+                     <img src="img/bird.jfif" alt="oriole resting" style="height: 300px; width: 300px;"><br /><br />
+                     <!-- Button trigger modal -->
+                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            View
+                     </button><br />
+              </div>
+
+              <div class="border border-info  w-50 text-center mx-3">
+                     <h2 class="fst-italic">Eagle</h2>
+                     <img src="img/eagle.jpg" alt="eagle resting" style="height: 300px; width: 300px;"><br /><br />
+                      <!-- Button trigger modal -->
+                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                            View
+                     </button><br />
+              </div>
+          <button type="button" class="btn btn-primary"><a href="page2.html" style="color: chartreuse;">Next Page</a></button>
+     </div>
+                    
+
+       
+       <br /><hr />
+       <!-- Modal -->
+       <div class="modal fade modal-xl modal-backdrop1" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                     <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                   <h5 class="modal-title" id="staticBackdropLabel">Oriole Flight</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-primary">
+                                   <p class="bg-info">The Baltimore oriole (Icterus galbula) is a small icterid blackbird common in eastern North America as a migratory
+                                   breeding bird. It received its name from the resemblance of the male's colors to those on the coat-of-arms of 17th
+                                   century Lord Baltimore. Observations of interbreeding between the Baltimore oriole and the western Bullock's oriole,
+                                   Icterus bullockii, led to both being classified as a single species, called the northern oriole, from 1973 to 1995.
+                                   Research by James Rising, a professor of zoology at the University of Toronto, and others showed that the two birds
+                                   actually did not interbreed significantly.
+
+                                   The Baltimore oriole is the state bird of Maryland. It is also the namesake and mascot for the Baltimore Orioles
+                                   baseball team.
+                                   </p>
+                                   <img src="img/oriole-1.jpg" alt="oriole flight" style="height: 250px; width: 50%; margin-left: 25%; margin-right: 25%;">
+                            </div>
+                            <div class="modal-footer bg-secondary">
+                                   <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                   <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+       <!-- Modal -->
+       <div class="modal fade modal-xl modal-backdrop2" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                     <div class="modal-content">
+                            <div class="modal-header bg-primary">
+                                   <h5 class="modal-title" id="staticBackdropLabel">Eagle Landing</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-info">
+                                   <p class="bg-primary">Eagle is the common name for many large birds of prey of the family Accipitridae. Eagles belong to several groups of
+                                   genera, some of which are closely related. Most of the 60 species of eagle are from Eurasia and Africa. Outside this
+                                   area, just 14 species can be found—2 in North America, 9 in Central and South America, and 3 in Australia.
+                                   </p>
+
+                                   <img src="img/eagle-1.jpg" alt="eagle landing" style="height: 250px; width: 50%; margin-left: 25%; margin-right: 25%;">
+                            </div>
+                            <div class="modal-footer bg-secondary">
+                                   <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                   <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+              crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+              integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+              crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+              integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+              crossorigin="anonymous"></script>
+</body>
+
+</html>
